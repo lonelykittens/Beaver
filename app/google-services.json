@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "162479793010",
+    "firebase_url": "https://beaver-c4259.firebaseio.com",
+    "project_id": "beaver-c4259",
+    "storage_bucket": "beaver-c4259.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162479793010:android:3a6ac1d2ba67284a",
+        "android_client_info": {
+          "package_name": "android.dykim.com.beaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162479793010-fi5p0qbfth9oveeespsotgv27l6ugaol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9u_akw57zLIHyE0L6SO_KYbEYmheyzlM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
