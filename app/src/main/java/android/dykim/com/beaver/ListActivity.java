@@ -1,5 +1,6 @@
 package android.dykim.com.beaver;
 
+import android.dykim.com.beaver.fcm.MyJobService;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,8 +9,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.dykim.com.beaver.fcm.MyFirebaseInstanceIDService;
+import android.dykim.com.beaver.fcm.MyJobService;
+import android.util.Log;
+
+import com.google.firebase.iid.FirebaseInstanceId;
+
+import java.io.IOException;
 
 public class ListActivity extends AppCompatActivity {
+
+    private MyFirebaseInstanceIDService instanceIDService = new MyFirebaseInstanceIDService();
+    private MyJobService myJobServce = new MyJobService();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +28,10 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //토큰 새로고침
+        String token = FirebaseInstanceId.getInstance().getToken();
+        Log.d("dykima", "my Token-" + token);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
