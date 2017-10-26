@@ -29,6 +29,9 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
     compile 'com.google.firebase:firebase-messaging:10.2.6'
     compile 'com.firebase:firebase-jobdispatcher:0.6.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'net.zetetic:android-database-sqlcipher:3.5.7@aar'
     testCompile 'junit:junit:4.12'
 }
 
